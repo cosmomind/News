@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NewsNow</string>
+    <string name="newsnow">NewsNow</string>
+    <string name="todo">TODO</string>
+    <string name="api_key">78e14e21361d4ffb8342672fb7737222</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ent">Entertainment</string>
+    <string name="sp">Sports</string>
+    <string name="health">Health</string>
+    <string name="tech">Technology</string>
+    <string name="bus">Business</string>
+    <string name="sci">Science</string>
+</resources>

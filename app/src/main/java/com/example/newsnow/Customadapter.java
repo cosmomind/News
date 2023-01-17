@@ -35,6 +35,7 @@ public class Customadapter extends RecyclerView.Adapter<Customviewholder> {
 
     @Override
     public void onBindViewHolder(@NonNull Customviewholder holder, int position) {
+        //Newsnow
 holder.cardview.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {

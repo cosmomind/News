@@ -1,5 +1,6 @@
 package com.example.newsnow;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -34,7 +35,7 @@ public class Customadapter extends RecyclerView.Adapter<Customviewholder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Customviewholder holder, int position) {
+    public void onBindViewHolder(@NonNull Customviewholder holder, @SuppressLint("RecyclerView") int position) {
         //Newsnow
 holder.cardview.setOnClickListener(new View.OnClickListener() {
     @Override

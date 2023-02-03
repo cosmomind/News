@@ -7,16 +7,21 @@
         <entry key="..\:/NewsNow/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2325" />
         <entry key="..\:/NewsNow/app/src/main/res/drawable/news.xml" value="0.2595" />
         <entry key="..\:/NewsNow/app/src/main/res/drawable/newslogo_background.xml" value="0.2595" />
+        <entry key="..\:/NewsNow/app/src/main/res/drawable/searchbg.xml" value="0.2585" />
+        <entry key="..\:/NewsNow/app/src/main/res/layout/activity_business.xml" value="0.25416666666666665" />
         <entry key="..\:/NewsNow/app/src/main/res/layout/activity_entertainment.xml" value="0.15052083333333333" />
         <entry key="..\:/NewsNow/app/src/main/res/layout/activity_health.xml" value="0.25416666666666665" />
         <entry key="..\:/NewsNow/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/NewsNow/app/src/main/res/layout/activity_science.xml" value="0.19429347826086957" />
+        <entry key="..\:/NewsNow/app/src/main/res/layout/activity_sports.xml" value="0.25416666666666665" />
+        <entry key="..\:/NewsNow/app/src/main/res/layout/activity_technology.xml" value="0.25416666666666665" />
         <entry key="..\:/NewsNow/app/src/main/res/layout/activity_web_view.xml" value="0.14447463768115942" />
-        <entry key="..\:/NewsNow/app/src/main/res/layout/fragment_book_news.xml" value="0.25416666666666665" />
-        <entry key="..\:/NewsNow/app/src/main/res/layout/fragment_home_news.xml" value="0.1" />
+        <entry key="..\:/NewsNow/app/src/main/res/layout/fragment_book_news.xml" value="0.264" />
+        <entry key="..\:/NewsNow/app/src/main/res/layout/fragment_home_news.xml" value="0.2" />
         <entry key="..\:/NewsNow/app/src/main/res/layout/fragment_section_news.xml" value="0.264" />
         <entry key="..\:/NewsNow/app/src/main/res/layout/headline_singleitem.xml" value="0.2033514492753623" />
-        <entry key="..\:/NewsNow/app/src/main/res/layout/home.xml" value="0.1" />
+        <entry key="..\:/NewsNow/app/src/main/res/layout/headsinglehome.xml" value="0.253125" />
+        <entry key="..\:/NewsNow/app/src/main/res/layout/home.xml" value="0.2" />
         <entry key="..\:/NewsNow/app/src/main/res/menu/nav_items.xml" value="0.264" />
         <entry key="..\:/NewsNow/app/src/main/res/mipmap-anydpi-v26/newslogo.xml" value="0.124" />
         <entry key="..\:/NewsNow/app/src/main/res/mipmap-anydpi-v26/newslogo_round.xml" value="0.1" />

@@ -1,5 +1,6 @@
 package com.example.newsnow;
 
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -15,46 +16,43 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class Customadapter extends RecyclerView.Adapter<Customviewholder> {
-     Context context;
-     List<Newsheadlines> headlines;
+public class Customadapter1 extends RecyclerView.Adapter<Customviewholder> {
+    Context context;
+    List<Newsheadlines> headlines;
 
 
 
-    public Customadapter(Context context, List<Newsheadlines> headlines) {
+    public Customadapter1(Context context, List<Newsheadlines> headlines) {
         this.context = context;
         this.headlines = headlines;
     }
 
 
 
-    public void setsearchlist(List<Newsheadlines> searchlist){
-        this.headlines = searchlist;
-        notifyDataSetChanged();
-    }
+
 
     @NonNull
     @Override
     public Customviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new Customviewholder(LayoutInflater.from(context).inflate(R.layout.headline_singleitem,parent,false));
+        return new Customviewholder(LayoutInflater.from(context).inflate(R.layout.headsinglehome,parent,false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull Customviewholder holder, @SuppressLint("RecyclerView") int position) {
         //Newsnow
-holder.cardview.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent i = new Intent(context,webView.class);
-        i.putExtra("url",headlines.get(position).getUrl());
-        context.startActivity(i);
+        holder.cardview1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context,webView.class);
+                i.putExtra("url",headlines.get(position).getUrl());
+                context.startActivity(i);
 
-    }
-});
+            }
+        });
 
 
         holder.txt_title.setText(headlines.get(position).getTitle());
-        holder.txt_source.setText(headlines.get(position).getSource().getName());
+        holder.txt_desc.setText(headlines.get(position).getDescription());
 //image loading
         if(headlines.get(position).getUrlToImage() != null){
             Picasso.get().load(headlines.get(position).getUrlToImage()).into(holder.img_headline);

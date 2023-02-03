@@ -26,7 +26,7 @@ public class home_news extends Fragment {
 
    String api = "78e14e21361d4ffb8342672fb7737222";
     RecyclerView recyclerview ;
-    Customadapter adapter;
+    Customadapter1 adapter;
     Context thiscontext;
     ArrayList<Newsheadlines> list;
 
@@ -50,13 +50,12 @@ public class home_news extends Fragment {
         list = new ArrayList<>();
         recyclerview.setHasFixedSize(true);
         recyclerview.setLayoutManager(new GridLayoutManager(thiscontext,1));
-        adapter = new Customadapter(thiscontext,list);
+        adapter = new Customadapter1(thiscontext,list);
         recyclerview.setAdapter(adapter);
         
         shownews();
 
-//        RequestManager manager = new RequestManager(container.getContext());
-//        manager.getNewsHeadlines(listener,"general",null);
+
 
 
         return v;
@@ -84,32 +83,7 @@ public class home_news extends Fragment {
     }
 
 
-//    private  final Onfetchdatalistener<Newsapiresponse> listener = new Onfetchdatalistener<Newsapiresponse>() {
-//        @Override
-//        public void onFetchData(List<Newsheadlines> list, String message) {
-////show articles in recyclerview
-//
-//            shownews(list);
-//        }
-//
-//
-//
-//        @Override
-//        public void onError(String message) {
-////show error message
-//        }
-//    };
-//
-//
-//    private void shownews(List<Newsheadlines> list) {
-////(RecyclerView) view
-//       // recyclerview = getView().findViewById(R.id.recycler_home);
-//
-//
-//
-//
-//
-//    }
+
 
 
 }

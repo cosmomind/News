@@ -21,7 +21,14 @@ String BASE_URL =    "https://newsapi.org/v2/";
             @Query("apiKey") String api_key);
 //if u go to newsapi website u can see that the get call comes before query
 
+    @GET("top-headlines")
+    Call<Newsapiresponse> get_Category_News(
 
-;
+            @Query("country") String country,
+            @Query("pageSize") int pagesize,
+            @Query("category") String category,
+
+            @Query("apiKey") String api_key);
+
 
 }

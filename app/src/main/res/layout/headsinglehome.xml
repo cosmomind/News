@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    app:cardElevation="8dp"
+    android:background="@color/grey"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_margin="6dp"
+        >
+        <!--News headline and source name-->
+
+            <!--text view for headline and source;width is 0 because we are dividing it horizontally-->
+
+        <ImageView
+            android:id="@+id/image_card"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/not_available"
+            android:scaleType="centerCrop"
+            android:layout_height="0dp">
+
+
+        </ImageView>
+
+        <TextView
+                android:id="@+id/text_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:maxLines="3"
+                android:textColor="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        <TextView
+            android:id="@+id/text_desc"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="6"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".book_news">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bookmark"
-        android:textSize="34dp"
-        android:layout_gravity="center"
-        />
-</FrameLayout>
+        android:layout_margin="20dp"
+        android:background="@drawable/searchbg"
+        app:queryHint="Search"
+
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01">
+
+
+    </androidx.appcompat.widget.SearchView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_home"
+        android:layout_marginTop="95dp"
+      android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="9dp"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/headline_singleitem"
+        android:layout_height="match_parent">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

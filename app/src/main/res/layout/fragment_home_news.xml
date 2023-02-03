@@ -12,7 +12,7 @@
        android:id="@+id/recycler_home"
         android:layout_margin="9dp"
         android:layout_width="match_parent"
-        tools:listitem="@layout/headline_singleitem"
+        tools:listitem="@layout/headsinglehome"
         android:layout_height="match_parent">
 
 

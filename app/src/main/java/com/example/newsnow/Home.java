@@ -38,15 +38,17 @@ BottomNavigationView btmview;
 
 
               if(id == R.id.home){
-              loadfrag(new home_news(),true,0);
-                  //code redundancy
+              loadfrag(new home_news(),true);
+
 
               }
               else if(id == R.id.bookmark){
-                  loadfrag(new book_news(),false,0);
+
+                  loadfrag(new book_news(),false);
               }
               else {
-                  loadfrag(new section_news(),false,0);
+
+                  loadfrag(new section_news(),false);
                   //for section
 
               }
@@ -62,15 +64,12 @@ BottomNavigationView btmview;
 
 }
 
-    public void loadfrag(Fragment fragment,boolean flag,int num){
+    public void loadfrag(Fragment fragment,boolean flag){
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         if(flag){
             ft.add(R.id.container,fragment);
-            num = 1;
-            if(num > 0){
-                ft.replace(R.id.container,fragment);
-            }
+
         }
        else{
             ft.replace(R.id.container,fragment);
